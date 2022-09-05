@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+         <meta charset="UTF-8"> <!-- esse utf-8 indica que o site é brasileiro, aceitando assim palavras da nossa escrita como acento -->
+        <!-- // na tag meta content o conteudo não ficara aparecendo no site, mas serve para que possa colocar 
+        palavras chaves e quando o usuario fizer uma pesquisa e digitar palavras colocadas nessa tag, 
+        o meu site apareça, o ideal é colocar uma descrição, um pequeno texto com as palavras chave -->
+        <meta content="">
+        <title>Meu Site</title>
+        <style>
+            body{
+                background-color: rgb(135, 162, 163);
+            }
+            h1{
+                color:chartreuse
+            }
+        </style>
+            <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b>Introdução a CSS </b></h1>
+    <h3>Aula 4 sobre CSS </h3>
+    <h4>Existem 3 formas de utilizar o CSS:</h4>
+   
+        <h5 class="Titulo1">Inline</h5>
+        <p class="Paragrafo">
+        A 1ª é a <b>Inline</b>, que é quando vou direto na tag do arquivo HTML e insiro ali um atributo de estilo (style)
+        e dai consigo passar o que quero, exemplo: estilização desse paragrafo.</br>
+        </br>
+        <b> Esta não é uma boa prática </b>
+    </p>
+    
+        <h5 class="Titulo2">Interna</h5>
+        <p class="Paragrafo">
+        A 2ª forma é a <b>Interna </b>, onde vai ficar dentro do arquivo HTML, mais especificamente dentro da tag head, onde
+        será criada uma tag chamada style e dentro dela passo outras tags, mencionada-as e adicionando o estilo que
+        quero criar, exemplo: estilização da cor de fundo e da cor do Titulo <b>"Introdução a CSS"</b>
+        
+    </p>  
+    
+        <h5 id="Titulo3">Externa</h5>
+        <p class="Paragrafo">
+        A 3ª e ultima forma é <b> externa </b> onde será criado um outro arquivo, fora do HTML e dai vou
+        chamar esse arquivo dentro do HTML, isso se chama <i> separação de responsabilidades </i> <br>
+        Ai, no meu arquivo HTML dentro da minha tag head vou chamar o arquivo do CSS atraves do style, e dentro dele vou
+        usar uma outra tag chamada <u style="color:red">link</u> vou colocar um atributo chamado <u style="color:red">rel</u>, colocando entre as aspas um atributo
+        que indica que estou usando um link de estilo: <u style="color:red">link rel="stylesheet"</u>, em seguida vou incluir
+        mais um atributo, que vai passar o caminho do meu arquivo CSS: <u style="color:red">href="style.css"</u> 
+        ficando ao final: <u style="color:red"><b>link rel="stylesheet" href="style.css"</b></u> <br>
+        <br>
+        Feito isso, terei dois modos de passar a estilização, atraves da <b>classe</b> onde irei nas tags que quero estilizar,
+        vou por dentro delas o atributo <u style="color:red"> class="nomeDoParametro"</u>, depois vou no arquivo 
+        CSS e vou estilizar do seguinte modo: vou chama-lo com .nomeDoParametro{} e dentro das chaves vou passando os
+        atributos que quero, como: color: ; e posso passar essa classe em outras tags que eu quiser. <br>
+        <br>
+        O outro modo de passar a estilização é atraves do <b>id</b>, porem esse é indicado parametriza-lo com a finalidade
+        de usar <b>uma única vez</b>, para usar vou na tag do HTML que quero, e vou por:<u style="color:red"> id="nomeQueQuiser" </u>
+        e no arquivo CSS vou chama-lo: <u style="color:red">#nomeQueQuiser{ color:"cor x"}</u>
+    </p>  
+</body>
+</html>
