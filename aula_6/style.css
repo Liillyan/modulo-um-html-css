@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:gray;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    background-color:rgb(236, 234, 234); 
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 16px;
+    
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:200px;
+}
+
+.container-sobre{
+    display: flex;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+    font-size: 20px;
+}
+
+.nome{
+    font-size: 30px;
+    color:brown
+}
+
+.container-descricao{
+    line-height: 25px;
+}
+
+.descricao{
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+   
+}
+
