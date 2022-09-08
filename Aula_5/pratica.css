@@ -1,0 +1,46 @@
+/* quando querermos que haja um seletor universal, ou seja, um atributo que pegará em todo site, usamos o * para
+definirmos, indicando que desde a 1ª linha do HTML, ate a ultima, vai receber esse atributo. */
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+        
+}
+
+.card{
+    width: 400px;
+    height: 212px;
+    border: 1px solid whitesmoke;
+    margin: 10px 0 10px 11px;
+    padding: 10px;
+    background-color: rgb(53, 207, 53);
+    display:inline-table;   
+}
+
+.card-titulo{
+    font-size: medium;
+    margin: 0 0 10px 20px;
+    display: inline;
+
+}
+
+.card-imagem{
+    width: 30%;
+    display: inline;
+    float: left;
+    margin-top: 50px;
+    
+}
+
+.card-text{
+    display: inline;
+    width: 65%;
+    float: right;
+    font-size: small;
+    line-height: 15pt;
+}
